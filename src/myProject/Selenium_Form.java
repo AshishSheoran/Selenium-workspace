@@ -23,8 +23,8 @@ public class Selenium_Form {
 		WebElement loginButton = driver.findElement(By.name("login"));
 		
 		// Sending values to the testBox 
-		emailField.sendKeys("sheoranashu1998@gmail.com");
-		passField.sendKeys("jasonstatham");
+		emailField.sendKeys("useremail@gmail.com");
+		passField.sendKeys("userPassword");
 		System.out.println("Text Field set!");
 		
 		// Deleting values from the text boxes
@@ -33,18 +33,18 @@ public class Selenium_Form {
 		System.out.println("Text boxes cleared!");
 		
 		// Using click() method to submit form
-		emailField.sendKeys("sheoranashu1998@gmail.com");
-		passField.sendKeys("jasonstatham");
+		emailField.sendKeys("useremail@gmail.com");
+		passField.sendKeys("userPassword");
 		loginButton.click();
 		System.out.println("Login done with Click()!");
 		
 		driver.get(baseUrl);
-		driver.findElement(By.id("email")).sendKeys("sheoranashu1998@gmail.com");
-		driver.findElement(By.name("pass")).sendKeys("jasonstatham");
+		driver.findElement(By.id("email")).sendKeys("useremail@gmail.com");
+		driver.findElement(By.name("pass")).sendKeys("userPassword");
 		driver.findElement(By.name("login")).submit();
 		System.out.println("Login Done with Submit()!");
 		
-		// driver.close();
+	        driver.close();
 
 	}
 
