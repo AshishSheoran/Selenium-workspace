@@ -16,10 +16,10 @@ public class Selenium_ImplicitWait {
 		driver.get("https://www.facebook.com");
 
 		WebElement emailField = driver.findElement(By.id("email"));
-		emailField.sendKeys("sheoranashu1998@gmail.com");
+		emailField.sendKeys("userEmail@gmail.com");
 
 		WebElement passField = driver.findElement(By.id("pass"));
-		passField.sendKeys("jasonstatham");
+		passField.sendKeys("userPassword");
 
 		WebElement loginButton = driver.findElement(By.xpath("//button[@id='u_0_b']"));
 		loginButton.click();
