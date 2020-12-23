@@ -44,18 +44,18 @@ public class Selenium_DynamicTables {
 		System.out.println("Maximum current price is : " + r);
 		
 		/*
-		 * // To get data from a specific row/column. WebElement baseTable =
-		 * driver.findElement(By.tagName("table"));
+		 * // To get data from a specific row/column. 
+		 * WebElement baseTable = driver.findElement(By.tagName("table"));
 		 * 
-		 * // To find 3rd row of table WebElement tableRow =
-		 * baseTable.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr[3]"
-		 * )); String rowText = tableRow.getText();
+		 * // To find 3rd row of table 
+		 * WebElement tableRow = baseTable.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr[3]"));
+		 * String rowText = tableRow.getText();
 		 * System.out.println("Third row of table : " + rowText);
 		 * 
-		 * // To get 3rd row's 2nd column data WebElement cellData =
-		 * tableRow.findElement(By.xpath(
-		 * "//*[@id=\"leftcontainer\"]/table/tbody/tr[3]/td[2]")); String valueCell =
-		 * cellData.getText(); System.out.println("Cell value is: " + valueCell);
+		 * // To get 3rd row's 2nd column data 
+		 * WebElement cellData = tableRow.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr[3]/td[2]")); 
+		 * String valueCell = cellData.getText(); 
+		 * System.out.println("Cell value is: " + valueCell);
 		 */
 
 		driver.close();
